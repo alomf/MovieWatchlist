@@ -1,9 +1,35 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h1>index.html</h1>
-        <script src="index.js"></script>
-    </body>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Watchlist</title>
+</head>
+<body>
+<div id="app">
+    <header class="header">
+        <nav class="nav">
+            <h1>Find you film</h1>
+            <a href="/watchlist.html">My Watchlist</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form id="search-form">
+                <img class="search-icon" src="img/search.png" alt="search icon">
+                <label for="title" aria-label="movie-title"></label>
+                <input type="text" name="title" id="title" placeholder="Enter Movie Title">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section id="movie-list">
+        </section>
+    </main>
+    <script src="index.js"></script>
+</div>
+</body>
 </html>
